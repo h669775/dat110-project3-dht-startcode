@@ -37,16 +37,23 @@ public class Util {
 	 * @return true if (lower <= id <= upper) or false otherwise
 	 */
 	public static boolean checkInterval(BigInteger id, BigInteger lower, BigInteger upper) {
-		// Hint:
-		// using mod = 10, then the interval (6, 2) = (6, 7, 8, 9, 0, 1, 2)
-		// The interval (6, 2) using the notation above means; pred = 6 and node = 2
-		// if id = 4, then (6 < 4 <= 2) = false  
-		// if id = 9, then (6 < 9 <= 2) = true
-		
-		// Task: given an identifier, id: check whether pred < id <= node
-		
-		return false;
-
+		System.out.println("Checking interval: id=" + id + ", lower=" + lower + ", upper=" + upper);
+	
+		if (lower.compareTo(upper) < 0) {
+			// Case 1: Normal interval (e.g., 6 <= id <= 9)
+			boolean result = id.compareTo(lower) >= 0 && id.compareTo(upper) <= 0;
+			System.out.println("Case 1 (Normal interval): Result = " + result);
+			return result;
+		} else if (lower.compareTo(upper) > 0) {
+			// Case 2: Wrapped interval (e.g., 9 < id <= 2 in mod space)
+			boolean result = id.compareTo(lower) > 0 || id.compareTo(upper) <= 0;
+			System.out.println("Case 2 (Wrapped interval): Result = " + result);
+			return result;
+		} else {
+			// Case 3: lower == upper (entire address space)
+			System.out.println("Case 3 (Entire address space): Result = true");
+			return true;
+		}
 	}
 	
 	public static List<String> toString(List<NodeInterface> list) throws RemoteException {

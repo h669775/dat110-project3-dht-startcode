@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="no.hvl.dat110.unit.tests.TestCheckInterval" time="0.008" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/olahavelandbrenne/Documents/Dokumenter/SkuleHVL/DAT110/dat110-project3-dht-startcode/target/test-classes:/Users/olahavelandbrenne/Documents/Dokumenter/SkuleHVL/DAT110/dat110-project3-dht-startcode/target/classes:/Users/olahavelandbrenne/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:/Users/olahavelandbrenne/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/olahavelandbrenne/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/olahavelandbrenne/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/olahavelandbrenne/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/olahavelandbrenne/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/Oslo"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="NO"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/olahavelandbrenne/Documents/Dokumenter/SkuleHVL/DAT110/dat110-project3-dht-startcode/target/surefire/surefirebooter-20250414220646631_3.jar /Users/olahavelandbrenne/Documents/Dokumenter/SkuleHVL/DAT110/dat110-project3-dht-startcode/target/surefire 2025-04-14T22-06-46_017-jvmRun1 surefire-20250414220646631_1tmp surefire_0-20250414220646631_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/olahavelandbrenne/Documents/Dokumenter/SkuleHVL/DAT110/dat110-project3-dht-startcode/target/test-classes:/Users/olahavelandbrenne/Documents/Dokumenter/SkuleHVL/DAT110/dat110-project3-dht-startcode/target/classes:/Users/olahavelandbrenne/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:/Users/olahavelandbrenne/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/olahavelandbrenne/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/olahavelandbrenne/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/olahavelandbrenne/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/olahavelandbrenne/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/olahavelandbrenne"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/olahavelandbrenne/Documents/Dokumenter/SkuleHVL/DAT110/dat110-project3-dht-startcode"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/olahavelandbrenne/Documents/Dokumenter/SkuleHVL/DAT110/dat110-project3-dht-startcode/target/surefire/surefirebooter-20250414220646631_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.2"/>
+    <property name="user.name" value="olahavelandbrenne"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/olahavelandbrenne/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/97/tdm65t5s6_vb1sx61mfwqgz40000gn/T/"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="/Users/olahavelandbrenne/Documents/Dokumenter/SkuleHVL/DAT110/dat110-project3-dht-startcode"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/olahavelandbrenne/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="test" classname="no.hvl.dat110.unit.tests.TestCheckInterval" time="0.004">
+    <system-out><![CDATA[Checking interval: id=8256520967608282605234844990226290265, lower=15618062003214643351512781541041391612, upper=210821560651360572675896360671414673172
+Case 1 (Normal interval): Result = false
+Checking interval: id=66481538825926898419352978747807121875, lower=53937554629190552131995290006614509577, upper=66910184482037901621933403444034052414
+Case 1 (Normal interval): Result = true
+Checking interval: id=121411138451101288395601026024677976156, lower=121411138451101288395601026024677976156, upper=210821560651360572675896360671414673172
+Case 1 (Normal interval): Result = true
+Checking interval: id=15618062003214643351512781541041391612, lower=210821560651360572675896360671414673172, upper=15618062003214643351512781541041391612
+Case 2 (Wrapped interval): Result = true
+Checking interval: id=8256520967608282605234844990226290265, lower=210821560651360572675896360671414673172, upper=15618062003214643351512781541041391612
+Case 2 (Wrapped interval): Result = true
+Checking interval: id=5, lower=340282366920938463463374607431768211452, upper=2
+Case 2 (Wrapped interval): Result = false
+Checking interval: id=0, lower=340282366920938463463374607431768211452, upper=2
+Case 2 (Wrapped interval): Result = true
+Checking interval: id=340282366920938463463374607431768211454, lower=340282366920938463463374607431768211452, upper=2
+Case 2 (Wrapped interval): Result = true
+Checking interval: id=10, lower=340282366920938463463374607431768211451, upper=2
+Case 2 (Wrapped interval): Result = false
+]]></system-out>
+  </testcase>
+</testsuite>
