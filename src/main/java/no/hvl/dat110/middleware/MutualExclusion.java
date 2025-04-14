@@ -61,7 +61,7 @@ public class MutualExclusion {
 	
 		// Multicast request to all other active nodes
 		multicastMessage(message, activenodes);
-	
+
 		// Wait for all acknowledgments 
 		int expectedAcks = activenodes.size(); // NOT including self since we're not sending message to self
 		int waited = 0;
@@ -92,6 +92,7 @@ public class MutualExclusion {
 			if (lowestMsg.getNodeName().equals(message.getNodeName())) {
 				acquireLock();
 				node.broadcastUpdatetoPeers(updates);
+				mutexqueue.clear();  // Clear queue after getting access
 				return true;
 			}
 		}
@@ -137,7 +138,7 @@ public class MutualExclusion {
 					message.setAcknowledged(true);
 					stub.onMutexAcknowledgementReceived(message);
 				}
-				queue.add(message);  // Add message to queue
+				queue.add(message);
 				break;
 			}
 			case 1: { // Currently in CS
@@ -148,6 +149,7 @@ public class MutualExclusion {
 				int senderClock = message.getClock();
 				int ownClock = clock.getClock();
 				
+				// Compare clocks and node IDs
 				if (senderClock < ownClock || 
 				   (senderClock == ownClock && 
 					message.getNodeID().compareTo(node.getNodeID()) < 0)) {
@@ -157,7 +159,7 @@ public class MutualExclusion {
 						stub.onMutexAcknowledgementReceived(message);
 					}
 				}
-				queue.add(message);  // Always add message to queue
+				queue.add(message);
 				break;
 			}
 			default:
